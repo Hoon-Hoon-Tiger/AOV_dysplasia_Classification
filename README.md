@@ -1,4 +1,4 @@
-# AOV_dysplasia_Classification
+# 💡 AOV_dysplasia_Classification
 - 십이지장 유두부에 존재하는 선종의 유무를 판단하기 위한 딥러닝 모델 구현(Binary Classification)
 
 ## Requirements
