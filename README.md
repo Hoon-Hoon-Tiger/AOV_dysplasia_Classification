@@ -18,6 +18,8 @@
      - __Canny edge detection 방법__을 이용하여 edge 추출
      - 이렇게 나온 edge를 이용하여 index를 찾아서 cropping을 진행
 
+## __DataSplit__
+- 각 중증도 별로 Patient를 기준으로 8:1:1, 7:1.5:1.5 비율로 Split
 
 ## Study Design
 
@@ -25,6 +27,12 @@
   - __Model : Resnet 50(pretrained model)__
   - __Augmentation(Image Augmentation Library, albumnetation 이용)__
      - Resize, RandomScale, RandomRotate90, RandomVerticalFlip, RandomHorizontalFlip, RandomBrightnessContrast
+  - Threshold(accuracy) : 0.5
+  - Epoch : 100
+  - Optimizer : Adam
+  - Loss Functioin : BCE(Binary Cross Entropy)
+  - Batch Size : 16
+  - Learning Rate : 0.0001
   
 ## 📋 Experiments List  
   
